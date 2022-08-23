@@ -1,0 +1,25 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Kookie Merchant</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title>Welcomer to the app!</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <p>You are logged in as <b>{{ user }}</b> </p>
+            <ion-button color="danger" (click)="logout()">Logout</ion-button>
+            <ion-button color="danger" (click)="scnr()">QRCodeScaner</ion-button>
+            <ion-button color="danger" (click)="cap()">BecCodeScaner</ion-button>
+
+            <input #box>
+            <ion-button color="danger" (click)="onKey(box.value)">Logout</ion-button>
+            <p>{{values}}</p>
+
+        </ion-card-content>
+    </ion-card>
+</ion-content>

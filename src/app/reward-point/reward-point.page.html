@@ -1,0 +1,59 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>rewardPoint</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-card>
+        <ion-card-header>
+            <ion-card-title></ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col>
+                        <ion-item>Customer ID
+                            <ion-label text-wrap>Customer ID</ion-label>
+                            <ion-label text-wrap>343434645645</ion-label>
+                            <ion-label text-wrap>Member Since</ion-label>
+                            <ion-label text-wrap>29 July 2009</ion-label>
+                        </ion-item>
+
+                    </ion-col>
+                    <!-- <ion-col>
+                        <ngx-qrcode [qrc-value]="value" qrc-class="aclass" qrc-errorCorrectionLevel="L">
+                        </ngx-qrcode>
+                    </ion-col> -->
+
+                </ion-row>
+                <ion-row>
+
+                    <ion-col>
+                        <ion-item>Wht mount of wrd you wnt to give?</ion-item>
+
+                        <ion-icon [name]="visibleOne ? 'checkmark-circle' :'information-circle'" (click)="toggleOne()"></ion-icon>
+                        <ion-icon [name]="visibleTwo ? 'checkmark-circle' :'information-circle'" (click)="toggleTwo()"></ion-icon>
+                        <ion-icon [name]="visibleThree ? 'checkmark-circle' :'information-circle'" (click)="toggleThree()"></ion-icon>
+
+
+                    </ion-col>
+                </ion-row>
+
+                <ion-item>Wht cus ordered?</ion-item>
+
+
+                <ion-button [color]="selected ? 'danger' :'primary'" name="drink" (click)="toggleColor(name)">Drink</ion-button>
+                <ion-button [color]="selected ? 'danger' :'primary'" name="food" (click)="toggleColor(name)">Drink</ion-button>
+
+            </ion-grid>
+            <ion-button color="danger" (click)="rrcode()">Go</ion-button>
+            <!-- <ngx-qrcode [qrc-value]="createdCode">
+
+            </ngx-qrcode> -->
+
+        </ion-card-content>
+    </ion-card>
+</ion-content>
